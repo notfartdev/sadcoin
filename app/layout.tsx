@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'Sadcoin',
   description: 'Sadcoin is a free open source peer-to-peer electronic cash system',
   generator: 'v0.app',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   icons: {
     icon: [
       {

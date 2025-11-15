@@ -9,9 +9,12 @@ export default function Page() {
       <div className="px-4 py-3" style={{ maxWidth: 'none' }}>
         {/* Header */}
         <div className="mb-3">
-          <div className="flex justify-between items-center mb-1">
-            <h1 className="font-bold" style={{ fontSize: '32px', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>Sadcoin.org</h1>
-            <a href="/exchange" style={{ fontSize: '13px' }}>Exchange Rate</a>
+          <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
+            <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>Sadcoin.org</h1>
+            <div className="flex gap-3">
+              <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
+              <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
+            </div>
           </div>
           <hr style={{ border: 'none', borderTop: '1px solid black', margin: '8px 0' }} />
         </div>
@@ -70,12 +73,12 @@ export default function Page() {
                 {/* Address Section */}
                 <div className="mb-3">
                   <div className="text-xs font-bold mb-1" style={{ fontSize: '11px' }}>Your Sadcoin Address:</div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap sm:flex-nowrap">
                     <input 
                       type="text" 
                       value="19CncWdnU57yqHQHNVpDsFB54JkpGu28"
                       readOnly
-                      className="flex-1 px-2 py-1 bg-white text-xs" 
+                      className="flex-1 px-2 py-1 bg-white text-xs min-w-0" 
                       style={{ 
                         border: '2px solid',
                         borderColor: '#808080 #DFDFDF #DFDFDF #808080',
@@ -122,7 +125,7 @@ export default function Page() {
                 </div>
 
                 {/* Status Bar */}
-                <div className="px-2 py-1 text-xs flex justify-between mt-2" style={{ 
+                <div className="px-2 py-1 text-xs flex justify-between mt-2 gap-1 flex-wrap" style={{ 
                   background: '#C0C0C0',
                   border: '2px solid',
                   borderColor: '#808080 #DFDFDF #DFDFDF #808080',
@@ -132,17 +135,20 @@ export default function Page() {
                   <span style={{ 
                     border: '1px solid',
                     borderColor: '#808080 #DFDFDF #DFDFDF #808080',
-                    padding: '1px 4px'
+                    padding: '1px 4px',
+                    whiteSpace: 'nowrap'
                   }}>3 connections</span>
                   <span style={{ 
                     border: '1px solid',
                     borderColor: '#808080 #DFDFDF #DFDFDF #808080',
-                    padding: '1px 4px'
+                    padding: '1px 4px',
+                    whiteSpace: 'nowrap'
                   }}>213 blocks</span>
                   <span style={{ 
                     border: '1px solid',
                     borderColor: '#808080 #DFDFDF #DFDFDF #808080',
-                    padding: '1px 4px'
+                    padding: '1px 4px',
+                    whiteSpace: 'nowrap'
                   }}>2 transactions</span>
                 </div>
               </div>

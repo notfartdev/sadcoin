@@ -12,8 +12,8 @@ export function WindowDialog({
       border: '2px solid',
       borderColor: '#DFDFDF #808080 #808080 #DFDFDF',
       boxShadow: '2px 2px 0px rgba(0,0,0,0.2)',
-      width: '640px',
-      maxWidth: '100%',
+      width: '100%',
+      maxWidth: '640px',
       background: '#C0C0C0'
     }}>
       {/* Title Bar - Classic Windows 95 Blue */}

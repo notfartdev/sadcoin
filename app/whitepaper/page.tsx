@@ -1,7 +1,21 @@
 export default function WhitepaperPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-[210mm] mx-auto px-8 py-12" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+      <div className="max-w-[210mm] mx-auto px-4 sm:px-8 py-6 sm:py-12" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+        {/* Navigation */}
+        <div className="mb-6">
+          <div className="flex justify-between items-center flex-wrap gap-2 mb-3">
+            <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>
+              <a href="/" className="no-underline text-black hover:underline">Sadcoin.org</a>
+            </h1>
+            <div className="flex gap-3">
+              <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
+              <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
+            </div>
+          </div>
+          <hr style={{ border: 'none', borderTop: '1px solid black', margin: '8px 0' }} />
+        </div>
+
         {/* Title */}
         <h1 className="text-center mb-2" style={{ fontSize: '18px', fontWeight: 'bold' }}>
           Sadcoin: A Peer-to-Peer Electronic Cash System
@@ -195,12 +209,6 @@ export default function WhitepaperPage() {
           </ol>
         </div>
 
-        {/* Back link */}
-        <div className="mt-8 text-center">
-          <a href="/" className="text-blue-600 hover:underline" style={{ fontSize: '14px' }}>
-            ← Back to Sadcoin.org
-          </a>
-        </div>
       </div>
     </div>
   );

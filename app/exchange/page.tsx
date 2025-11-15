@@ -30,9 +30,15 @@ export default function ExchangePage() {
       <div className="px-4 py-3" style={{ maxWidth: 'none' }}>
         {/* Header */}
         <div className="mb-3">
-          <h1 className="font-bold mb-1" style={{ fontSize: '32px', fontWeight: 700, fontFamily: 'Times New Roman, Times, serif' }}>
-            <a href="/" className="no-underline text-black hover:underline">Sadcoin.org</a>
-          </h1>
+          <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
+            <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>
+              <a href="/" className="no-underline text-black hover:underline">Sadcoin.org</a>
+            </h1>
+            <div className="flex gap-3">
+              <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
+              <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
+            </div>
+          </div>
           <hr className="border-t border-black" />
         </div>
         
@@ -77,15 +83,17 @@ export default function ExchangePage() {
         {/* Exchange Rate History */}
         <div className="mb-4">
           <h2 className="font-bold mb-2" style={{ fontSize: '15px' }}>Mid-Market Exchange Rate History</h2>
-          <div className="font-mono text-sm leading-5 space-y-0">
-            {exchangeRates.map((rate, idx) => (
-              <div key={idx}>
-                <span>{rate.usd}</span>
-                <span> = </span>
-                <span>{rate.btc}</span>
-                <span> {rate.date}</span>
-              </div>
-            ))}
+          <div className="overflow-x-auto">
+            <div className="font-mono text-sm leading-5 space-y-0" style={{ minWidth: 'fit-content' }}>
+              {exchangeRates.map((rate, idx) => (
+                <div key={idx}>
+                  <span>{rate.usd}</span>
+                  <span> = </span>
+                  <span>{rate.btc}</span>
+                  <span> {rate.date}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

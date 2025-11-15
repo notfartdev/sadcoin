@@ -19,12 +19,12 @@ export function SendCoinsDialog() {
             fontFamily: 'MS Sans Serif, Arial, sans-serif',
             fontSize: '11px'
           }}>Pay To:</label>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap sm:flex-nowrap">
             <input 
               type="text" 
               value="192.168.0.12"
               readOnly
-              className="flex-1 px-2 py-1 bg-white text-xs" 
+              className="flex-1 px-2 py-1 bg-white text-xs min-w-0" 
               style={{ 
                 border: '2px solid',
                 borderColor: '#808080 #DFDFDF #DFDFDF #808080',
