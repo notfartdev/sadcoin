@@ -25,36 +25,40 @@ export default function Page() {
 
         {/* Sadcoin Client Window Dialog */}
         <div className="mb-6">
-          <WindowDialog title="Sadcoin" icon="💰">
+          <WindowDialog title="Sadcoin" icon="$">
             <div className="space-y-0 p-0">
               {/* Menu Bar */}
-              <div className="flex gap-0 text-xs border-b" style={{ 
-                borderColor: '#C9C9C9', 
-                background: '#F5F5F5',
-                fontFamily: 'Tahoma, Arial, sans-serif',
-                fontSize: '11px'
+              <div className="flex gap-0 text-xs" style={{ 
+                background: '#C0C0C0',
+                fontFamily: 'MS Sans Serif, Arial, sans-serif',
+                fontSize: '11px',
+                borderBottom: '1px solid #808080'
               }}>
-                <div className="px-3 py-1 hover:bg-blue-100 cursor-pointer">File</div>
-                <div className="px-3 py-1 hover:bg-blue-100 cursor-pointer">Options</div>
-                <div className="px-3 py-1 hover:bg-blue-100 cursor-pointer">Help</div>
+                <div className="px-3 py-1 hover:bg-blue-600 hover:text-white cursor-pointer">File</div>
+                <div className="px-3 py-1 hover:bg-blue-600 hover:text-white cursor-pointer">Options</div>
+                <div className="px-3 py-1 hover:bg-blue-600 hover:text-white cursor-pointer">Help</div>
               </div>
 
               {/* Tabs */}
-              <div className="flex gap-0 text-xs" style={{ background: '#D8D0E8' }}>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 border-b-2 font-bold" style={{ 
-                  background: '#D8D0E8',
-                  borderColor: '#D8D0E8',
-                  fontFamily: 'Tahoma, Arial, sans-serif',
-                  fontSize: '11px'
+              <div className="flex gap-0 text-xs" style={{ background: '#C0C0C0' }}>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 font-bold" style={{ 
+                  background: '#C0C0C0',
+                  border: '2px solid',
+                  borderColor: '#DFDFDF #808080 #808080 #DFDFDF',
+                  fontFamily: 'MS Sans Serif, Arial, sans-serif',
+                  fontSize: '11px',
+                  marginTop: '2px'
                 }}>
                   <span className="text-green-600">▶</span>
                   <span>Send Coins</span>
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 border-b font-bold" style={{ 
-                  background: '#F0F0F0',
-                  borderColor: '#C9C9C9',
-                  fontFamily: 'Tahoma, Arial, sans-serif',
-                  fontSize: '11px'
+                <div className="flex items-center gap-1.5 px-3 py-1.5" style={{ 
+                  background: '#C0C0C0',
+                  border: '1px solid #808080',
+                  fontFamily: 'MS Sans Serif, Arial, sans-serif',
+                  fontSize: '11px',
+                  marginTop: '2px',
+                  marginLeft: '-2px'
                 }}>
                   <span>📖</span>
                   <span>Address Book</span>
@@ -62,7 +66,7 @@ export default function Page() {
               </div>
 
               {/* Content Area */}
-              <div className="p-3" style={{ background: '#D8D0E8', fontFamily: 'Tahoma, Arial, sans-serif' }}>
+              <div className="p-3" style={{ background: '#C0C0C0', fontFamily: 'MS Sans Serif, Arial, sans-serif' }}>
                 {/* Address Section */}
                 <div className="mb-3">
                   <div className="text-xs font-bold mb-1" style={{ fontSize: '11px' }}>Your Sadcoin Address:</div>
@@ -73,18 +77,19 @@ export default function Page() {
                       readOnly
                       className="flex-1 px-2 py-1 bg-white text-xs" 
                       style={{ 
-                        border: '1px solid #7F9DB9',
-                        fontFamily: 'Tahoma, Arial, sans-serif',
+                        border: '2px solid',
+                        borderColor: '#808080 #DFDFDF #DFDFDF #808080',
+                        fontFamily: 'MS Sans Serif, Arial, sans-serif',
                         fontSize: '11px'
                       }}
                     />
                     <button 
-                      className="px-3 py-1 text-xs font-bold rounded whitespace-nowrap"
+                      className="px-3 py-1 text-xs font-bold whitespace-nowrap"
                       style={{ 
-                        background: 'linear-gradient(to bottom, #F0F0F0, #C9C9C9)',
-                        border: '1px solid #8E8E8E',
-                        boxShadow: '0 1px 2px rgba(0,0,0,0.2)',
-                        fontFamily: 'Tahoma, Arial, sans-serif',
+                        background: '#C0C0C0',
+                        border: '2px solid',
+                        borderColor: '#DFDFDF #808080 #808080 #DFDFDF',
+                        fontFamily: 'MS Sans Serif, Arial, sans-serif',
                         fontSize: '11px'
                       }}
                     >
@@ -102,12 +107,12 @@ export default function Page() {
                 {/* Transactions */}
                 <div className="mb-2">
                   <button 
-                    className="px-3 py-1 text-xs font-bold mb-2 rounded"
+                    className="px-3 py-1 text-xs font-bold mb-2"
                     style={{ 
-                      background: 'linear-gradient(to bottom, #FFFFCC, #FFFF99)',
-                      border: '1px solid #8E8E8E',
-                      boxShadow: '0 1px 2px rgba(0,0,0,0.2)',
-                      fontFamily: 'Tahoma, Arial, sans-serif',
+                      background: '#C0C0C0',
+                      border: '2px solid',
+                      borderColor: '#DFDFDF #808080 #808080 #DFDFDF',
+                      fontFamily: 'MS Sans Serif, Arial, sans-serif',
                       fontSize: '11px'
                     }}
                   >
@@ -117,15 +122,28 @@ export default function Page() {
                 </div>
 
                 {/* Status Bar */}
-                <div className="px-2 py-1 text-xs flex justify-between border-t mt-2" style={{ 
-                  borderColor: '#C9C9C9', 
-                  background: '#F5F5F5',
-                  fontFamily: 'Tahoma, Arial, sans-serif',
+                <div className="px-2 py-1 text-xs flex justify-between mt-2" style={{ 
+                  background: '#C0C0C0',
+                  border: '2px solid',
+                  borderColor: '#808080 #DFDFDF #DFDFDF #808080',
+                  fontFamily: 'MS Sans Serif, Arial, sans-serif',
                   fontSize: '11px'
                 }}>
-                  <span>3 connections</span>
-                  <span>213 blocks</span>
-                  <span>2 transactions</span>
+                  <span style={{ 
+                    border: '1px solid',
+                    borderColor: '#808080 #DFDFDF #DFDFDF #808080',
+                    padding: '1px 4px'
+                  }}>3 connections</span>
+                  <span style={{ 
+                    border: '1px solid',
+                    borderColor: '#808080 #DFDFDF #DFDFDF #808080',
+                    padding: '1px 4px'
+                  }}>213 blocks</span>
+                  <span style={{ 
+                    border: '1px solid',
+                    borderColor: '#808080 #DFDFDF #DFDFDF #808080',
+                    padding: '1px 4px'
+                  }}>2 transactions</span>
                 </div>
               </div>
             </div>
