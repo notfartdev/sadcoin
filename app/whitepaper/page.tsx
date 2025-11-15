@@ -8,9 +8,10 @@ export default function WhitepaperPage() {
             <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>
               <a href="/" className="no-underline text-black hover:underline">Sadcoin.org</a>
             </h1>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
               <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
+              <a href="/faucet" className="hover:underline" style={{ fontSize: '13px' }}>Faucet</a>
             </div>
           </div>
           <hr style={{ border: 'none', borderTop: '1px solid black', margin: '8px 0' }} />

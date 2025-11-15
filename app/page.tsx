@@ -11,9 +11,10 @@ export default function Page() {
         <div className="mb-3">
           <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
             <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>Sadcoin.org</h1>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
               <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
+              <a href="/faucet" className="hover:underline" style={{ fontSize: '13px' }}>Faucet</a>
             </div>
           </div>
           <hr style={{ border: 'none', borderTop: '1px solid black', margin: '8px 0' }} />

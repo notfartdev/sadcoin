@@ -34,9 +34,10 @@ export default function ExchangePage() {
             <h1 className="font-bold" style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, margin: 0, fontFamily: 'Times New Roman, Times, serif' }}>
               <a href="/" className="no-underline text-black hover:underline">Sadcoin.org</a>
             </h1>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
               <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
+              <a href="/faucet" className="hover:underline" style={{ fontSize: '13px' }}>Faucet</a>
             </div>
           </div>
           <hr className="border-t border-black" />
