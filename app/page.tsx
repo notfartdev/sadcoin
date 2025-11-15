@@ -81,7 +81,8 @@ export default function Page() {
                     <input 
                       id="contract-address"
                       type="text" 
-                      defaultValue=""
+                      defaultValue="2CD8VtSTQmAZg15dojU5sAUrxBVMhr2yfn6aqZxkpump"
+                      readOnly
                       className="flex-1 px-2 py-1 bg-white text-xs min-w-0" 
                       style={{ 
                         border: '2px solid',
