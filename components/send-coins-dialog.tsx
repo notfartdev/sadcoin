@@ -10,7 +10,7 @@ export function SendCoinsDialog() {
           fontSize: '11px'
         }}>
           Enter the recipient's IP address (e.g. 123.45.6.7) for online transfer with comments and confirmation,<br/>
-          or Sadcoin address (e.g. 1NS17iag9jJgTHD1VxjLCEn2uQ3rJEDPL) if recipient is not online.
+          or Sadcoin address (e.g. 4wqMuY5Gtg8kTr7xzYUBCNVZnrByWFa5oRkMbGRLgszb) if recipient is not online.
         </p>
 
         {/* Pay To */}
@@ -106,7 +106,7 @@ export function SendCoinsDialog() {
             fontSize: '11px'
           }}>Message:</label>
           <textarea 
-            value="Order #12345"
+            value="Order dexscreener for this project."
             readOnly
             className="w-full px-2 py-1 bg-white text-xs resize-none" 
             rows={3}

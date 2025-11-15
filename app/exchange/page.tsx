@@ -38,6 +38,7 @@ export default function ExchangePage() {
               <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
               <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
               <a href="/faucet" className="hover:underline" style={{ fontSize: '13px' }}>Faucet</a>
+              <a href="https://x.com/sadcoinsol" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ fontSize: '13px' }}>𝕏</a>
             </div>
           </div>
           <hr className="border-t border-black" />

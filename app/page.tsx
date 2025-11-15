@@ -17,6 +17,7 @@ export default function Page() {
               <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
               <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
               <a href="/faucet" className="hover:underline" style={{ fontSize: '13px' }}>Faucet</a>
+              <a href="https://x.com/sadcoinsol" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ fontSize: '13px' }}>𝕏</a>
             </div>
           </div>
           <hr style={{ border: 'none', borderTop: '1px solid black', margin: '8px 0' }} />

@@ -11,6 +11,7 @@ export default function FaucetPage() {
             <a href="/" className="hover:underline" style={{ fontSize: '13px' }}>Home</a>
             <a href="/exchange" className="hover:underline" style={{ fontSize: '13px' }}>Exchange Rate</a>
             <a href="/whitepaper" className="hover:underline" style={{ fontSize: '13px' }}>Whitepaper</a>
+            <a href="https://x.com/sadcoinsol" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ fontSize: '13px' }}>𝕏</a>
           </div>
         </div>
       </div>

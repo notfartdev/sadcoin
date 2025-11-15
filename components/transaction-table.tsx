@@ -3,14 +3,14 @@ export function TransactionTable() {
     {
       status: '0/unconfirmed',
       date: '11/15/2025 23:45',
-      description: 'To: Alice 192.168.0.12 - Order #12345',
+      description: 'To: Alice 192.168.0.12 - Buy SDC mfer and dont jeet.',
       debit: '-9.95',
       credit: ''
     },
     {
       status: '7 blocks',
       date: '11/15/2025 22:18',
-      description: 'From: Alice - Thanks for testing all that software',
+      description: 'From: Alice - HODL! Fuck my chungus life',
       debit: '',
       credit: '+25.00'
     }
