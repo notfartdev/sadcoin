@@ -2,14 +2,14 @@ export function TransactionTable() {
   const transactions = [
     {
       status: '0/unconfirmed',
-      date: '03/01/2009 23:45',
+      date: '11/15/2025 23:45',
       description: 'To: Alice 192.168.0.12 - Order #12345',
       debit: '-9.95',
       credit: ''
     },
     {
       status: '7 blocks',
-      date: '03/01/2009 22:18',
+      date: '11/15/2025 22:18',
       description: 'From: Alice - Thanks for testing all that software',
       debit: '',
       credit: '+25.00'

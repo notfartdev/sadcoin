@@ -1,3 +1,5 @@
+'use client'
+
 import { WindowDialog } from '@/components/window-dialog'
 import { SendCoinsDialog } from '@/components/send-coins-dialog'
 import { TransactionTable } from '@/components/transaction-table'
@@ -73,12 +75,12 @@ export default function Page() {
               <div className="p-3" style={{ background: '#C0C0C0', fontFamily: 'MS Sans Serif, Arial, sans-serif' }}>
                 {/* Address Section */}
                 <div className="mb-3">
-                  <div className="text-xs font-bold mb-1" style={{ fontSize: '11px' }}>Your Sadcoin Address:</div>
+                  <div className="text-xs font-bold mb-1" style={{ fontSize: '11px' }}>Sadcoin Contract Address:</div>
                   <div className="flex gap-2 flex-wrap sm:flex-nowrap">
                     <input 
+                      id="contract-address"
                       type="text" 
-                      value="19CncWdnU57yqHQHNVpDsFB54JkpGu28"
-                      readOnly
+                      defaultValue=""
                       className="flex-1 px-2 py-1 bg-white text-xs min-w-0" 
                       style={{ 
                         border: '2px solid',
@@ -89,12 +91,25 @@ export default function Page() {
                     />
                     <button 
                       className="px-3 py-1 text-xs font-bold whitespace-nowrap"
+                      onClick={() => {
+                        const input = document.getElementById('contract-address') as HTMLInputElement;
+                        if (input && input.value) {
+                          navigator.clipboard.writeText(input.value).then(() => {
+                            alert('Copied to clipboard!');
+                          }).catch(() => {
+                            input.select();
+                            document.execCommand('copy');
+                            alert('Copied to clipboard!');
+                          });
+                        }
+                      }}
                       style={{ 
                         background: '#C0C0C0',
                         border: '2px solid',
                         borderColor: '#DFDFDF #808080 #808080 #DFDFDF',
                         fontFamily: 'MS Sans Serif, Arial, sans-serif',
-                        fontSize: '11px'
+                        fontSize: '11px',
+                        cursor: 'pointer'
                       }}
                     >
                       Copy to Clipboard
@@ -105,7 +120,7 @@ export default function Page() {
                 {/* Balance */}
                 <div className="mb-3">
                   <div className="text-xs font-bold" style={{ fontSize: '11px' }}>Balance:</div>
-                  <div className="text-sm font-bold mt-0.5">15.05</div>
+                  <div className="text-sm font-bold mt-0.5">6.9</div>
                 </div>
 
                 {/* Transactions */}
