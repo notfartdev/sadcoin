@@ -217,7 +217,7 @@ export default function Page() {
 
         {/* Date Section */}
         <div className="mb-3">
-          <p className="italic">01 Nov 2008</p>
+          <p className="italic">15 Nov 2025</p>
         </div>
 
         {/* Sadcoin Description Section */}

@@ -1,28 +1,28 @@
 export default function ExchangePage() {
   const exchangeRates = [
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/28/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/27/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/26/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/25/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/24/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/23/2009" },
-    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "12/22/2009" },
-    { usd: "$1.00 USD", btc: "1,594.63 SDC", date: "12/21/2009" },
-    { usd: "$1.00 USD", btc: "1,594.63 SDC", date: "12/20/2009" },
-    { usd: "$1.00 USD", btc: "1,586.70 SDC", date: "12/19/2009" },
-    { usd: "$1.00 USD", btc: "1,622.40 SDC", date: "12/18/2009" },
-    { usd: "$1.00 USD", btc: "1,630.33 SDC", date: "12/17/2009" },
-    { usd: "$1.00 USD", btc: "1,606.53 SDC", date: "12/16/2009" },
-    { usd: "$1.00 USD", btc: "1,626.37 SDC", date: "12/15/2009" },
-    { usd: "$1.00 USD", btc: "1,626.37 SDC", date: "12/14/2009" },
-    { usd: "$1.00 USD", btc: "1,618.43 SDC", date: "12/13/2009" },
-    { usd: "$1.00 USD", btc: "1,562.90 SDC", date: "12/12/2009" },
-    { usd: "$1.00 USD", btc: "1,503.40 SDC", date: "12/11/2009" },
-    { usd: "$1.00 USD", btc: "1,491.50 SDC", date: "12/10/2009" },
-    { usd: "$1.00 USD", btc: "1,455.80 SDC", date: "12/09/2009" },
-    { usd: "$1.00 USD", btc: "1,428.03 SDC", date: "12/08/2009" },
-    { usd: "$1.00 USD", btc: "1,392.33 SDC", date: "12/07/2009" },
-    { usd: "$1.00 USD", btc: "1,364.56 SDC", date: "12/06/2009" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/15/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/14/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/13/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/12/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/11/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/10/2025" },
+    { usd: "$1.00 USD", btc: "1,578.77 SDC", date: "11/09/2025" },
+    { usd: "$1.00 USD", btc: "1,594.63 SDC", date: "11/08/2025" },
+    { usd: "$1.00 USD", btc: "1,594.63 SDC", date: "11/07/2025" },
+    { usd: "$1.00 USD", btc: "1,586.70 SDC", date: "11/06/2025" },
+    { usd: "$1.00 USD", btc: "1,622.40 SDC", date: "11/05/2025" },
+    { usd: "$1.00 USD", btc: "1,630.33 SDC", date: "11/04/2025" },
+    { usd: "$1.00 USD", btc: "1,606.53 SDC", date: "11/03/2025" },
+    { usd: "$1.00 USD", btc: "1,626.37 SDC", date: "11/02/2025" },
+    { usd: "$1.00 USD", btc: "1,626.37 SDC", date: "11/01/2025" },
+    { usd: "$1.00 USD", btc: "1,618.43 SDC", date: "10/31/2025" },
+    { usd: "$1.00 USD", btc: "1,562.90 SDC", date: "10/30/2025" },
+    { usd: "$1.00 USD", btc: "1,503.40 SDC", date: "10/29/2025" },
+    { usd: "$1.00 USD", btc: "1,491.50 SDC", date: "10/28/2025" },
+    { usd: "$1.00 USD", btc: "1,455.80 SDC", date: "10/27/2025" },
+    { usd: "$1.00 USD", btc: "1,428.03 SDC", date: "10/26/2025" },
+    { usd: "$1.00 USD", btc: "1,392.33 SDC", date: "10/25/2025" },
+    { usd: "$1.00 USD", btc: "1,364.56 SDC", date: "10/24/2025" },
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function ExchangePage() {
           <p className="mb-1">
             <a href="#">PayPal Transaction Fee Calculator</a>
           </p>
-          <p className="italic mt-1">12/28/2009</p>
+          <p className="italic mt-1">11/15/2025</p>
         </div>
 
         <hr className="border-t border-black my-4" />
@@ -66,7 +66,7 @@ export default function ExchangePage() {
         {/* Instructions */}
         <div className="mb-3">
           <p className="mb-3">
-            To buy or sell sadcoins, please send an email to <a href="mailto:newlibertystandard@gmail.com">newlibertystandard@gmail.com</a> stating how many sadcoins you would like to buy or sell. Currently only <a href="#">PayPal</a> is accepted for payment. The rate changes at midnight Greenwich Mean Time regardless of whether the new rate has been posted. The time at which the financial transaction begins determines the rate for the transaction.
+            To buy or sell sadcoins, please send an email to <a href="mailto:hello@sadcoin.fun">hello@sadcoin.fun</a> stating how many sadcoins you would like to buy or sell. Currently only <a href="https://www.paypal.com">PayPal</a> is accepted for payment. The rate changes at midnight Greenwich Mean Time regardless of whether the new rate has been posted. The time at which the financial transaction begins determines the rate for the transaction.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ExchangePage() {
         {/* Rate Calculation */}
         <div className="mb-3">
           <p className="mb-3">
-            Our exchange rate is calculated by dividing $1.00 by the <a href="#">average amount of electricity required to run a computer with high CPU for a year. 1331.5 kWh,</a> multiplied by the <a href="#">the average residential cost of electricity in the United States for the previous year, $0.1136,</a> divided by 12 months divided by the number of sadcoins generated by my computer over the past 30 days.
+            Our exchange rate is calculated by dividing $1.00 by the <a href="#">average amount of electricity required to run a computer with high CPU for a year. 1331.5 kWh,</a> multiplied by the <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a" className="text-blue-600 hover:underline">the average residential cost of electricity in the United States for the previous year, $0.17,</a> divided by 12 months divided by the number of sadcoins generated by my computer over the past 30 days.
           </p>
         </div>
 
